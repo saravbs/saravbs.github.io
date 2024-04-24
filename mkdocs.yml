@@ -2,10 +2,37 @@ site_name: Sara
 site_url: https://example.com/Blog
 theme:
   name: material
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follo
   palette:  
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default 
+      primary: black
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
@@ -13,6 +40,7 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: black
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -27,12 +55,25 @@ markdown_extensions:
   - attr_list
   - def_list
 plugins:
+  - search
   - blog:
       post_excerpt_separator: <!-- more -->
+      enabled: !ENV CI
+      blog_dir: blog
+      blog_toc: true
+      post_dir: blog/posts
+      post_date_format: yyyy/MM/dd
+      post_url_format: "{date}/{slug}"
+nav:
+  - Home: 
+    - Introduction: 'index.md'
+  - Writing:
+    - 'blog/index.md'
+
 extra:
   social:
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/saraabbasi847/
+      link: https://www.linkedin.com/in/saravbs/
 
 copyright: Copyright &copy; 2024 Sara Abbasi
 
