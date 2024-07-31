@@ -1,4 +1,6 @@
-# Writing and Playing
+---
+slug: Writing|Sara Abbasi
+---
+# Writing
 
-It's been a long time that i don't find anything that seprate me from the time. I want to write, To find out more about myself. I do not be hard on myself about my writing style, instead i prioritize writing frequently. 
-
+I’m passionate about diving into the worlds of technology, serverless platforms, swimming, and books. My blog is a digital space where I share my thoughts, experiences, and discoveries on these topics :)
